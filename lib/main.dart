@@ -9,7 +9,8 @@ import 'provider/counter_provider.dart';
 import 'theme/app_theme.dart';
 import 'storage/shared_prefs.dart'; // 导入 SharedPrefs
 import 'utils/context_util.dart'; // 导入 ContextUtil
-
+import 'package:flutter_app/router/app_router.dart';
+import 'pages/splash_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await SharedPrefs.init();
@@ -49,8 +50,7 @@ class MyApp extends StatelessWidget {
         Locale('en', ''), // English
         Locale('zh', ''), // Chinese
       ],
-      routerConfig: AppRouter.router, // 使用 AppRouter 的路由配置
-      // 启动时根据登录状态决定初始路由
+      routerConfig: router, // 使用 AppRouter 的路由配置
     );
   }
 }

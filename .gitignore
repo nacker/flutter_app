@@ -1,45 +1,105 @@
-# Miscellaneous
-*.class
+## Flutter 生成的文件和目录
+.dart_tool/
+.idea/
+.vscode/
+*.iml
+*.lock
+.packages
+.pub-cache/
+.pub/
+build/
+flutter_export_environment.sh
+.settings/
+*.swp
+
+## Android 相关
+/android/**/gradle-wrapper.jar
+/android/.gradle/
+/android/local.properties
+/android/**/GeneratedPluginRegistrant.java
+/android/**/gradle-app.setting
+/android/**/gradle.properties
+/android/**/gradlew
+/android/**/gradlew.bat
+/android/**/local.properties
+/android/**/GeneratedPluginRegistrant.java
+/android/**/key.properties
+/android/**/flutter_build.log
+
+## iOS 相关
+/ios/**/.symlinks/
+/ios/**/Pods/
+/ios/**/.generated/
+/ios/**/Flutter/App.framework/
+/ios/**/Flutter/Flutter.framework/
+/ios/**/Flutter/Flutter.podspec
+/ios/**/Flutter/Generated.xcconfig
+/ios/**/ServiceDefinitions.json
+/ios/**/Runner.xcworkspace/
+/ios/**/Runner.xcodeproj/xcuserdata/
+/ios/**/Runner.xcodeproj/project.xcworkspace/xcuserdata/
+/ios/**/Flutter/flutter_export_environment.sh
+/ios/**/Flutter/app.flx
+/ios/**/Flutter/app.zip
+/ios/**/Flutter/flutter_assets/
+/ios/**/Flutter/flutter_plugins/
+/ios/**/.last_build_id
+/ios/**/Flutter/FlutterPluginRegistrant/Classes/GeneratedPluginRegistrant.*
+
+## macOS 相关
+/macos/.flutter-plugins
+/macos/.flutter-plugins-dependencies
+/macos/.symlinks/
+/macos/Flutter/GeneratedPluginRegistrant.swift
+/macos/Flutter/ephemeral/
+/macos/Flutter/FlutterEmbedder.framework
+/macos/Flutter/FlutterMacOS.framework
+/macos/Flutter/FlutterPluginRegistrant/GeneratedPluginRegistrant.swift
+
+## Web 相关
+/web/**/assets/
+/web/**/canvaskit/
+/web/**/flutter_service_worker.js
+/web/**/index.html
+/web/**/main.dart.js
+/web/**/manifest.json
+/web/**/version.json
+
+## Windows 相关
+/windows/.flutter-plugins
+/windows/.flutter-plugins-dependencies
+/windows/.symlinks/
+/windows/flutter/generated_plugin_registrant.cc
+/windows/flutter/generated_plugins.cmake
+
+## Linux 相关
+/linux/.flutter-plugins
+/linux/.flutter-plugins-dependencies
+/linux/.symlinks/
+/linux/flutter/ephemeral/
+/linux/flutter/generated_plugin_registrant.cc
+/linux/flutter/generated_plugins.cmake
+
+## 测试相关
+.coverage
+coverage/
+
+## 环境变量
+.env
+.env.production
+.env.development
+.env.local
+.env.*.local
+
+## 其他
 *.log
 *.pyc
 *.swp
+*.swo
+*~
 .DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+.Trashes
+ehthumbs.db
+Thumbs.db
+.fvm/
+.fvm/flutter_sdk
