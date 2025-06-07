@@ -1,36 +1,32 @@
+// 导入Flutter的核心库
 import 'package:flutter/material.dart';
-import 'package:flutter_app/utils/screen_util.dart';
-import 'package:go_router/go_router.dart'; // 导入 ScreenUtil
 
+/// HomePage 是应用的主页页面。
+/// 它是一个 StatelessWidget，表示页面内容不会动态改变。
 class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+  /// 构造函数，用于创建 HomePage 实例。
+  const HomePage({Key? key}) : super(key: key);
 
+  /// build 方法用于构建页面的 UI。
+  /// 
+  /// 参数:
+  /// - [BuildContext context] 提供了页面的上下文信息，用于导航、主题等操作。
+  /// 
+  /// 返回值:
+  /// - 返回一个 Widget，表示页面的根布局。
   @override
   Widget build(BuildContext context) {
-    // 设置设计稿尺寸（如 iPhone 6 的 375x667）
-    ScreenUtil.setDesignSize(375, 667);
-
     return Scaffold(
+      // 设置页面的 AppBar，显示标题 "Home Page"。
       appBar: AppBar(
-        title: Text(
-          'Home Page',
-          style: TextStyle(fontSize: ScreenUtil.adaptFontSize(16)),
-        ),
+        title: const Text('Home Page'), // 标题文本
       ),
-      body: Center(
-        child: SizedBox(
-          width: ScreenUtil.adaptWidth(200),
-          height: ScreenUtil.adaptHeight(50),
-          child: ElevatedButton(
-            onPressed: () {
-              // 示例：跳转到登录页
-               context.push('/login');
-            },
-            child: Text(
-              'Go to Login',
-              style: TextStyle(fontSize: ScreenUtil.adaptFontSize(16)),
-            ),
-          ),
+      // 设置页面的主体内容。
+      body: const Center(
+        // Center 组件用于将子组件居中显示。
+        child: Text(
+          'Welcome to the Home Page!', // 显示欢迎文本。
+          style: TextStyle(fontSize: 20), // 设置文本样式，字体大小为 20。
         ),
       ),
     );
